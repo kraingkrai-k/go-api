@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form BBL-Test</title>
+</head>
+<body>
+<h1>Hello Word</h1>
+
+<form name="payForm" method="post" action="https://psipay.bangkokbank.com/b2c/eng/payment/payForm.jsp">
+    <input type="hidden" name="orderRef" value="000000000008">
+    <input type="hidden" name="amount" value="1.5">
+    <input type="hidden" name="currCode" value="764">
+    <input type="hidden" name="lang" VALUE="E">
+    <input type="hidden" name="merchantId" value="9915">
+<!--    <input type="hidden" name="merchantId" value="20115">-->
+    <input type="hidden" name="failUrl" value="http://www.yourwebsite.com/pFail.jsp">
+    <input type="hidden" name="successUrl" value="http://www.yourwebsite.com/pSuccess.jsp">
+    <input type="hidden" name="errorUrl" value="http://www.yourwebsite.com/pError.jsp">
+    <input type="hidden" name="payType" value="H">
+    <input type="hidden" name="payMethod" value="CC">
+    <input type="hidden" name="remark" value="test pay">
+
+    <!--Ipay connect-->
+    <input type="hidden" name="memberPay_service" value="T">
+    <input type="hidden" name="memberPay_memberId" value="0000000001">
+<!--    <input type="hidden" name="memberPay_token" value="041e04e70ee6100a4e39f45e902782904f590d268110">-->
+    <!--Ipay connect-->
+
+    <!-- <!— Optional parameter -->
+    <input type="hidden" name="redirect" value="5">
+    <input type="hidden" name="Ref" value="000000000008">
+    <input type="hidden" name="orderRef1" value="test-ref-00001">
+    <!-- <!— Optional parameter -->
+
+    <input type="submit" value="Pay Now">
+</form>
+</body>
+</html>

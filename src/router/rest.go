@@ -2,6 +2,11 @@ package router
 
 import (
 	"go-api/src/controller"
+	bblImpl "go-api/src/helpers/bbl/implement"
+	bblModel "go-api/src/helpers/bbl/model"
+	"go-api/src/helpers/shape/implement/circle"
+	"go-api/src/helpers/shape/implement/rectangle"
+	"go-api/src/helpers/wraphttps"
 	"go-api/src/repository"
 	"go-api/src/usecase"
 
@@ -12,7 +17,12 @@ import (
 func NewRest(app *gin.Engine, dbSQL *gorm.DB) *gin.Engine {
 
 	repo := repository.New(dbSQL)
-	uc := usecase.New(repo)
+
+	shapeRecImpl := rectangle.New(&rectangle.Rectangle{})
+	shapeCircleImpl := circle.New(&circle.Circle{})
+
+	bbl := bblImpl.New(wraphttps.New(), bblModel.NewBBL())
+	uc := usecase.New(repo, shapeRecImpl, shapeCircleImpl, bbl)
 	ctrl := controller.New(uc)
 
 	route := app.Group("/api")
@@ -20,6 +30,12 @@ func NewRest(app *gin.Engine, dbSQL *gorm.DB) *gin.Engine {
 
 	// public route
 	route.POST("/signin", ctrl.SigninWithUsername)
+
+	// Dev
+	route.POST("/feed", ctrl.DataFeed)
+
+	route.POST("/register/bbl/card", ctrl.RegisterBBLCard)
+	route.POST("/queryMember/bbl", ctrl.GetMemberPay)
 
 	// user route
 	userGroup := route.Group("/user", AuthorizedJWT())
