@@ -2,9 +2,9 @@ package controller
 
 import (
 	"fmt"
-	bblModel "go-api/src/helpers/bbl/model"
-	"go-api/src/helpers/response"
-	"go-api/src/model"
+	bblModel "github.com/kraingkrai-k/go-api/src/helpers/bbl/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/response"
+	"github.com/kraingkrai-k/go-api/src/model"
 
 	"github.com/gin-gonic/gin"
 )

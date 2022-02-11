@@ -1,6 +1,6 @@
 package controller
 
-import "go-api/src/usecase"
+import "github.com/kraingkrai-k/go-api/src/usecase"
 
 type Controller struct {
 	usecase usecase.Interface

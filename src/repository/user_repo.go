@@ -2,7 +2,7 @@ package repository
 
 import (
 	"errors"
-	"go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/model"
 
 	"gorm.io/gorm"
 )

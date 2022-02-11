@@ -1,6 +1,6 @@
 package circle
 
-import "go-api/src/helpers/shape"
+import "github.com/kraingkrai-k/go-api/src/helpers/shape"
 
 type Circle struct {
 	circle shape.Interface

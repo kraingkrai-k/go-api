@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"encoding/xml"
 	"fmt"
-	"go-api/src/helpers/bbl/model"
-	"go-api/src/helpers/wraphttps"
+	"github.com/kraingkrai-k/go-api/src/helpers/bbl/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/wraphttps"
 )
 
 func (i *implement) QueryMemberPay(input model.BBLRequest) (output model.MemberPay, err error) {

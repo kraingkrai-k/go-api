@@ -1,6 +1,6 @@
 package model
 
-import "go-api/src/config"
+import "github.com/kraingkrai-k/go-api/src/config"
 
 type BBL struct {
 	BaseBBLURL    string

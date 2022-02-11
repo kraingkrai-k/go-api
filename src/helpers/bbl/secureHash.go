@@ -4,7 +4,7 @@ import (
 	"crypto/sha512"
 	"encoding/json"
 	"fmt"
-	"go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/model"
 )
 
 var merchant model.MerchantConnectBBL

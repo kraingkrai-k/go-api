@@ -2,7 +2,7 @@ package response
 
 import (
 	"errors"
-	"go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/model"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

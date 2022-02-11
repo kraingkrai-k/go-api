@@ -1,11 +1,11 @@
 package usecase
 
 import (
-	"go-api/src/helpers/bbl"
-	bblModel "go-api/src/helpers/bbl/model"
-	"go-api/src/helpers/shape"
-	"go-api/src/model"
-	"go-api/src/repository"
+	"github.com/kraingkrai-k/go-api/src/helpers/bbl"
+	bblModel "github.com/kraingkrai-k/go-api/src/helpers/bbl/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/shape"
+	"github.com/kraingkrai-k/go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/repository"
 )
 
 type Usecase struct {

@@ -1,6 +1,6 @@
 package rectangle
 
-import "go-api/src/helpers/shape"
+import "github.com/kraingkrai-k/go-api/src/helpers/shape"
 
 type Rectangle struct {
 	rectangle shape.Interface

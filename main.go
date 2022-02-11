@@ -1,8 +1,8 @@
 package main
 
 import (
-	"go-api/src/config"
-	"go-api/src/router"
+	"github.com/kraingkrai-k/go-api/src/config"
+	"github.com/kraingkrai-k/go-api/src/router"
 	"net/http"
 	"time"
 )
@@ -70,7 +70,7 @@ func main() {
 //func NewX() Interface {
 //	return &X{
 //		Title:   "Title",
-//		BaseUri: "foobar/api/",
+//		BaseUri: "foobar/go-api/",
 //	}
 //}
 //

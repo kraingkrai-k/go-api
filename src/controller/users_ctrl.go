@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"go-api/src/helpers/response"
-	"go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/response"
+	"github.com/kraingkrai-k/go-api/src/model"
 	"strconv"
 
 	"github.com/gin-gonic/gin"

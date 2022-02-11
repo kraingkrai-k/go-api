@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"go-api/src/helpers/response"
-	"go-api/src/middleware"
-	"go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/response"
+	"github.com/kraingkrai-k/go-api/src/middleware"
+	"github.com/kraingkrai-k/go-api/src/model"
 
 	"github.com/gin-gonic/gin"
 )

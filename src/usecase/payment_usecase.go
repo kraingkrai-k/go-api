@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"go-api/src/helpers/bbl"
-	bblModel "go-api/src/helpers/bbl/model"
-	"go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/bbl"
+	bblModel "github.com/kraingkrai-k/go-api/src/helpers/bbl/model"
+	"github.com/kraingkrai-k/go-api/src/model"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -18,7 +18,7 @@ var url = "https://psipay.bangkokbank.com/b2c/eng/"
 
 func (uc *Usecase) RegisterBBLCard(input model.RegisterCard) (output model.RegisterCard, err error) {
 
-	pathAddMember := fmt.Sprintf("%smerchant/api/MemberPayApi.jsp", url)
+	pathAddMember := fmt.Sprintf("%smerchant/go-api/MemberPayApi.jsp", url)
 	bodyString := fmt.Sprintf("%s|%s|%s|%s|%s|%s|%s", input.MerchantId, input.MerchantApiId, input.Password, input, input.Amount, input.PaymentType, input.Hash)
 	shaHash := sha512.New()
 

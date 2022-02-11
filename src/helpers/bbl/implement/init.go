@@ -1,9 +1,9 @@
 package implement
 
 import (
-	"go-api/src/helpers/bbl"
-	"go-api/src/helpers/bbl/model"
-	"go-api/src/helpers/wraphttps"
+	"github.com/kraingkrai-k/go-api/src/helpers/bbl"
+	"github.com/kraingkrai-k/go-api/src/helpers/bbl/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/wraphttps"
 )
 
 type implement struct {

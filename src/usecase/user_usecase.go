@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"go-api/src/model"
+	"github.com/kraingkrai-k/go-api/src/model"
 )
 
 func (uc *Usecase) GetUsers(filter model.Filter) (output []model.Users, paginate model.Paginate, err error) {

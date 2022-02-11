@@ -2,12 +2,12 @@ package router
 
 import (
 	"fmt"
-	"go-api/src/helpers/response"
-	"go-api/src/middleware"
+	"github.com/dgrijalva/jwt-go"
+	"github.com/kraingkrai-k/go-api/src/helpers/response"
+	"github.com/kraingkrai-k/go-api/src/middleware"
 	"net/http"
 	"strings"
 
-	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 )
 

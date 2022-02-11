@@ -1,14 +1,14 @@
 package router
 
 import (
-	"go-api/src/controller"
-	bblImpl "go-api/src/helpers/bbl/implement"
-	bblModel "go-api/src/helpers/bbl/model"
-	"go-api/src/helpers/shape/implement/circle"
-	"go-api/src/helpers/shape/implement/rectangle"
-	"go-api/src/helpers/wraphttps"
-	"go-api/src/repository"
-	"go-api/src/usecase"
+	"github.com/kraingkrai-k/go-api/src/controller"
+	bblImpl "github.com/kraingkrai-k/go-api/src/helpers/bbl/implement"
+	bblModel "github.com/kraingkrai-k/go-api/src/helpers/bbl/model"
+	"github.com/kraingkrai-k/go-api/src/helpers/shape/implement/circle"
+	"github.com/kraingkrai-k/go-api/src/helpers/shape/implement/rectangle"
+	"github.com/kraingkrai-k/go-api/src/helpers/wraphttps"
+	"github.com/kraingkrai-k/go-api/src/repository"
+	"github.com/kraingkrai-k/go-api/src/usecase"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
